@@ -13,19 +13,18 @@ fetch("data.json")
 
 function afficherProduits(tableauProduits) {
     tableauProduits.forEach(produit => {
- 
+
 
 
         document.getElementById("produits").innerHTML += `
 
     
-         <div class=" card">
-                <img class="rad" src="${produit.imageurl}" alt="Image produits">
+         <div class="mb-16 card">
+                <img class="cardImg" src="${produit.imageurl}" alt="Image produits">
                 <h3 class="font25">${produit.titre}</h3>
                 <p class="font15">${produit.presentation}</p>
                 <a class="btn" href="">dévorez-moi</a>
             </div>
-    
     `
     });
 }
@@ -39,15 +38,14 @@ function afficherClients(tableauClients) {
 
         document.getElementById("clients").innerHTML += `
 
-        <div class="flex textCenter cardAvis">
-             <ul class="">
+        <div class="mb-16 flex textCenter cardAvis">
+             <ul>
                <li class="font15">${client.nom}</li>
               <li class="cblue font15">${client.typePrestation}</li>
-               <li>${client.commentaire}</li>
+                <li>${client.commentaire}</li>
               <li class="cblue font15">${client.note}/5</li>
              </ul>
         </div>
-    
     `
     });
 }
@@ -61,14 +59,13 @@ function afficherBenefices(tableauBenefices) {
 
         document.getElementById("benefices").innerHTML += `
 
-       <div class="">
-            <div class="flex large-6 cardBene">
+       <div class="large-3">
+            <div class=" cardBene">
                 <img class="img"
                     src= ${benefice.image} alt="Photo agriculture">
                 <p>${benefice.commentaire}</p>
             </div>
         </div>
-    
     `
     });
 }
