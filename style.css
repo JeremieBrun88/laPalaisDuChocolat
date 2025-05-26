@@ -12,29 +12,42 @@
     text-decoration: none;
 }
 
-
+:root {
+  --gap: 32px;
+}
 
 /* header */
 
 header {
-    border-bottom: 3px solid #000;
-    position: sticky;
-    top: 5px;
-    width: 100%;
-    display: block;
+    border-radius: 300px;
+    margin: auto;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 95%;
     background-color: #d6c0b37f;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 80px;
+    padding: 10px 20px;
+}
+
+.headerLink {
+font-size: 15px;
+color: #493628;
+background-color: red;
+
 }
 
 /* hero */
 
 .hero {
     background-image: url(assets/bandeau_cafe2.webp);
-    height: 400px;
-    padding: 150px;
+    height: 100vh;
     color: #493628;
+}
+
+.heroContent {
+      background-color: #d6c0b37f;
+       border-radius: 12px;
 }
 
 /* body */
@@ -85,9 +98,7 @@ h2 {
     margin-bottom: 4px;
 }
 
-a {
-    font-size: 25px;
-}
+
 
 /* tailles - largueur */
 
@@ -205,6 +216,7 @@ a {
 
 /*Carte*/
 
+
 .w30 {
     width: 30%;
 }
@@ -282,10 +294,9 @@ a {
 /*Mise en page*/
 
 .container {
-    max-width: 1400px;
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 16px;
 }
 
 .responsive {
@@ -306,19 +317,13 @@ a {
     background-color: rgb(165, 42, 42);
 }
 
-.bgMarronhero {
-       background-color: #d6c0b36c;
-       border-radius: 12px;
-}
+
 .bgMarronsec{
       background-color: #AB886D;
        border-radius: 12px;
 }
 
-.cMarronClair {
-    background-color: #9b6f4d;
-    border-radius: 15px;
-}
+
 
 .cwhite {
     color: #fff;
@@ -346,22 +351,14 @@ a {
     padding-right: 60px;
 }
 
-.rad {
-    border-radius: 10px;
 
-}
 
 .bgwhite {
     background-color: #fff;
 }
 
 
-.hero {
-    background-image: url(assets/bandeau_cafe2.webp);
-    height: 400px;
-    padding: 150px;
-    color: #493628;
-}
+
 
 .img {
     height: 200px;
